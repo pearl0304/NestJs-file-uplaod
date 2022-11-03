@@ -25,7 +25,7 @@ export class FileController {
   // @ts-ignore
   @UseInterceptors(FilesInterceptor("files", 5, {
     storage: diskStorage({
-      destination: './public',
+      destination: './upload',
       filename: editFileName
     }),
     fileFilter: imageFileFilter

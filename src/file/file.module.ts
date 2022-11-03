@@ -6,7 +6,7 @@ import { FileService } from "./file.service";
 @Module({
   imports: [
     MulterModule.register({
-      dest: "./public"
+      dest: "./upload"
     })
   ],
   controllers: [FileController],

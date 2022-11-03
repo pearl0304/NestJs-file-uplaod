@@ -9,7 +9,7 @@ async function bootstrap() {
     AppModule
   );
 
-  app.useStaticAssets(join(__dirname, "..", "public"));
+  app.useStaticAssets(join(__dirname, "..", "upload"));
   await app.listen(9001).then(() => {
     console.log(`http://localhost:9001`);
   });
