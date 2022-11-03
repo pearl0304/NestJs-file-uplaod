@@ -18,7 +18,7 @@ export class FileController {
 
   @Get("/:imgpath")
   seeUploadedFile(@Param("imgpath") image, @Res() res) {
-    return res.sendFile(image, { root: "./public" });
+    return res.sendFile(image, { root: "./upload" });
   }
 
   @Post("/")
